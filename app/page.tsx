@@ -1,4 +1,4 @@
-import { Menu, ShoppingBasket } from "lucide-react";
+import { Menu, ShoppingBasket, ArrowDownLeft } from "lucide-react";
 import Image from "next/image";
 
 const SvgFrame = () => {
@@ -35,9 +35,9 @@ export default function Home() {
           <div>
             <ShoppingBasket strokeWidth={1.5} />
           </div>
-          <div>
+          {/* <div>
             <Menu strokeWidth={1.5} />
-          </div>
+          </div> */}
         </div>
       </nav>
 
@@ -62,25 +62,59 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center gap-4 p-4 py-12">
-        <div className="flex flex-col gap-1 *:flex *:w-fit *:flex-row *:items-center *:justify-center *:border-[1px] *:border-black *:p-4 *:text-xl">
-          <div className="ml-10">
-            <p>High-quality materials</p>
-          </div>
-          <div className="ml-6">
-            <p>Long-lasting design</p>
-          </div>
-          <div className="ml-28">
-            <p>Local products</p>
-          </div>
-          <div className="">
-            <p>Sustainable resources</p>
-          </div>
-          <div className="ml-12">
-            <p>Organic & recycled fibers</p>
-          </div>
-          <div className="ml-24">
-            <p>Fair trade clothing</p>
+      <div className="flex flex-row items-center gap-1 p-4 py-12">
+        <div>
+          <ul className="flex rotate-180 flex-row gap-1 [writing-mode:vertical-lr]">
+            <li className="border-[1px] border-black p-4 text-xl underline decoration-1 underline-offset-4">
+              <a href="#">New drops</a>
+            </li>
+            <li className="border-[1px] border-black p-4 text-xl underline decoration-1 underline-offset-4">
+              <a href="#">Shop</a>
+            </li>
+            <li className="border-[1px] border-black p-4 text-xl underline decoration-1 underline-offset-4">
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="flex h-full w-full flex-col justify-between gap-1">
+          <div className="grid h-full w-full grid-cols-2 grid-rows-3 gap-1 underline decoration-1 underline-offset-4 *:text-xl">
+            <div className="relative h-full w-full border-[1px] border-black p-2 text-right">
+              Shirts
+              <div className="absolute bottom-0 left-0 m-1">
+                <ArrowDownLeft strokeWidth={1} />
+              </div>
+            </div>
+            <div className="relative h-full w-full border-[1px] border-black p-2 text-right">
+              Apparel
+              <div className="absolute bottom-0 left-0 m-1">
+                <ArrowDownLeft strokeWidth={1} />
+              </div>
+            </div>
+            <div className="relative h-full w-full border-[1px] border-black p-2 text-right">
+              Boots
+              <div className="absolute bottom-0 left-0 m-1">
+                <ArrowDownLeft strokeWidth={1} />
+              </div>
+            </div>
+            <div className="relative h-full w-full border-[1px] border-black p-2 text-right">
+              Drinkware
+              <div className="absolute bottom-0 left-0 m-1">
+                <ArrowDownLeft strokeWidth={1} />
+              </div>
+            </div>
+            <div className="relative h-full w-full border-[1px] border-black p-2 text-right">
+              Bags
+              <div className="absolute bottom-0 left-0 m-1">
+                <ArrowDownLeft strokeWidth={1} />
+              </div>
+            </div>
+            <div className="relative h-full w-full border-[1px] border-black p-2 text-right">
+              Collectibles
+              <div className="absolute bottom-0 left-0 m-1">
+                <ArrowDownLeft strokeWidth={1} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -138,6 +172,31 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* <div className="flex flex-row items-center gap-2">
+            <CircleCheckBig className="size-4" />
+            <p>High-quality materials</p>
+          </div>
+          <div className="flex flex-row items-center gap-2">
+            <CircleCheckBig className="size-4" />
+            <p>Long-lasting design</p>
+          </div>
+          <div className="flex flex-row items-center gap-2">
+            <CircleCheckBig className="size-4" />
+            <p>Local products</p>
+          </div>
+          <div className="flex flex-row items-center gap-2">
+            <CircleCheckBig className="size-4" />
+            <p>Sustainable resources</p>
+          </div>
+          <div className="flex flex-row items-center gap-2">
+            <CircleCheckBig className="size-4" />
+            <p>Organic & recycled fibers</p>
+          </div>
+          <div className="flex flex-row items-center gap-2">
+            <CircleCheckBig className="size-4" />
+            <p>Fair trade clothing</p>
+          </div> */}
     </div>
   );
 }
