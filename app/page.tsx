@@ -139,37 +139,94 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="p-4 py-12">
+      <div className="bg-white p-4 py-12">
         <h2 className="text-xl font-bold uppercase">Our collection</h2>
 
-        <div className="mt-4 flex flex-row flex-nowrap gap-4 overflow-auto">
-          <div className="relative aspect-[3/4] w-64 flex-none bg-gray-200">
-            <div className="absolute left-0 top-0 h-full w-full overflow-hidden object-fill">
+        <div className="mt-4 flex flex-col gap-4">
+          <div className="relative aspect-[3/1] w-full flex-none bg-gray-200 object-fill">
+            <div className="absolute left-0 top-0 h-full w-full object-fill">
               <Image src={"/images/shirts.jpg"} alt="Shirts image" fill />
             </div>
 
-            <div className="absolute bottom-0 left-0 w-fit bg-white p-4 pl-0">
+            <div className="absolute bottom-0 left-0 w-fit bg-white p-4 pb-0 pl-0">
               <h2 className="text-l font-bold uppercase">Shirt 1</h2>
             </div>
           </div>
-          <div className="relative aspect-[3/4] w-64 flex-none bg-gray-200">
-            <div className="absolute left-0 top-0 h-full w-full overflow-hidden object-fill">
+
+          <div className="relative aspect-[3/1] w-full flex-none bg-gray-200 object-fill">
+            <div className="absolute left-0 top-0 h-full w-full object-fill">
               <Image src={"/images/shirts.jpg"} alt="Shirts image" fill />
             </div>
 
-            <div className="absolute bottom-0 left-0 w-fit bg-white p-4 pl-0">
+            <div className="absolute bottom-0 left-0 w-fit bg-white p-4 pb-0 pl-0">
               <h2 className="text-l font-bold uppercase">Shirt 2</h2>
             </div>
           </div>
-          <div className="relative aspect-[3/4] w-64 flex-none bg-gray-200">
-            <div className="absolute left-0 top-0 h-full w-full overflow-hidden object-fill">
+
+          <div className="relative aspect-[3/1] w-full flex-none bg-gray-200 object-fill">
+            <div className="absolute left-0 top-0 h-full w-full object-fill">
               <Image src={"/images/shirts.jpg"} alt="Shirts image" fill />
             </div>
 
-            <div className="absolute bottom-0 left-0 w-fit bg-white p-4 pl-0">
-              <h2 className="text-l font-bold uppercase">Shirt 3</h2>
+            <div className="absolute bottom-0 left-0 w-fit bg-white p-4 pb-0 pl-0">
+              <h2 className="text-l font-bold uppercase">Jeans 1</h2>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full bg-gray-200 p-4 py-12">
+        <h2 className="text-xl font-bold uppercase">
+          20% off to first time customers
+        </h2>
+        <p className="text-3xl">
+          Sign up for our newsletter and get a coupon in your inbox.
+        </p>
+
+        <form>
+          <input
+            className="my-4 block w-full border-[1px] border-black p-2"
+            type="email"
+            placeholder="Enter your email"
+          />
+
+          <div>
+            <input type="checkbox" name="newsletter" id="newsletter" />
+            <p className="inline px-2">
+              I have read & agree o the Terms and Conditions. We respect your
+              Privacy.
+            </p>
+          </div>
+
+          <button
+            type="submit"
+            className="my-6 border-[1px] border-black p-2 text-xl"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+      <div className="w-full bg-white p-4 py-12 text-gray-500">
+        <div className="grid grid-cols-2 gap-1 *:decoration-1 *:underline-offset-4">
+          <p className="hover:underline">Contact us</p>
+          <p className="hover:underline">Deliveries</p>
+          <p className="hover:underline">FAQs</p>
+          <p className="hover:underline">Become a retailer</p>
+          <p className="hover:underline">Environmental policy</p>
+          <p className="hover:underline">Cookie policy</p>
+
+          <p className="hover:underline">Returns / Exchange</p>
+          <p className="hover:underline">Terms & Conditions</p>
+          <p className="hover:underline">Newsletter</p>
+          <p className="hover:underline">Flagship store</p>
+          <p className="hover:underline">Privacy policy</p>
+          <p className="hover:underline">Complaints book</p>
+        </div>
+
+        <div className="flex flex-col gap-2 pt-12">
+          <p> © Neutrall</p>
+          <p>2024 • All rights reserved</p>
         </div>
       </div>
 
