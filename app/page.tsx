@@ -19,25 +19,10 @@ export default function Home() {
       <nav className="flex items-center justify-between p-4 backdrop-blur-md">
         <h1 className="text-xl font-light">Neutrall</h1>
 
-        {/* <ul>
-          <li>
-            <a href="#">New drops</a>
-          </li>
-          <li>
-            <a href="#">Shop</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-        </ul> */}
-
         <div className="flex items-center gap-4">
           <div>
             <ShoppingBasket strokeWidth={1.5} />
           </div>
-          {/* <div>
-            <Menu strokeWidth={1.5} />
-          </div> */}
         </div>
       </nav>
 
@@ -143,8 +128,8 @@ export default function Home() {
         <h2 className="text-xl font-bold uppercase">Our collection</h2>
 
         <div className="mt-4 flex flex-col gap-4">
-          <div className="relative aspect-[3/1] w-full flex-none bg-gray-200 object-fill">
-            <div className="absolute left-0 top-0 h-full w-full object-fill">
+          <div className="relative aspect-[3/1] w-full object-cover">
+            <div className="absolute left-0 top-0 h-full w-full object-cover">
               <Image src={"/images/shirts.jpg"} alt="Shirts image" fill />
             </div>
 
@@ -153,7 +138,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative aspect-[3/1] w-full flex-none bg-gray-200 object-fill">
+          <div className="relative aspect-[3/1] w-full flex-none object-fill">
             <div className="absolute left-0 top-0 h-full w-full object-fill">
               <Image src={"/images/shirts.jpg"} alt="Shirts image" fill />
             </div>
@@ -163,7 +148,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative aspect-[3/1] w-full flex-none bg-gray-200 object-fill">
+          <div className="relative aspect-[3/1] w-full flex-none object-fill">
             <div className="absolute left-0 top-0 h-full w-full object-fill">
               <Image src={"/images/shirts.jpg"} alt="Shirts image" fill />
             </div>
@@ -176,11 +161,9 @@ export default function Home() {
       </div>
 
       <div className="w-full bg-gray-200 p-4 py-12">
-        <h2 className="text-xl font-bold uppercase">
-          20% off to first time customers
-        </h2>
-        <p className="text-3xl">
-          Sign up for our newsletter and get a coupon in your inbox.
+        <p className="text-xl font-bold uppercase">
+          Sign up for our newsletter and get a 20% off coupon for your first
+          order.
         </p>
 
         <form>
@@ -190,20 +173,21 @@ export default function Home() {
             placeholder="Enter your email"
           />
 
-          <div>
-            <input type="checkbox" name="newsletter" id="newsletter" />
-            <p className="inline px-2">
-              I have read & agree o the Terms and Conditions. We respect your
-              Privacy.
-            </p>
-          </div>
+          <div className="flex">
+            <div>
+              <input type="checkbox" name="newsletter" id="newsletter" />
+              <p className="inline px-2">
+                I have read & agree o the Terms and Conditions.
+              </p>
+            </div>
 
-          <button
-            type="submit"
-            className="my-6 border-[1px] border-black p-2 text-xl"
-          >
-            Subscribe
-          </button>
+            <button
+              type="submit"
+              className="border-[1px] border-black p-2 text-xl"
+            >
+              Subscribe
+            </button>
+          </div>
         </form>
       </div>
 
