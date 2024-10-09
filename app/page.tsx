@@ -103,16 +103,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white p-4 py-12">
+      {/* <div className="bg-white p-4 py-12">
         <h2 className="font-bold text-xl uppercase sm:text-3xl">Our collection</h2>
 
-        <div className="mt-4 flex flex-col gap-4">
-          <div className="relative aspect-[3/1] w-full flex-none">
+        <div className="mt-4 flex flex-col gap-0 md:flex-row">
+          <div className="relative aspect-[3/1] w-full flex-none md:aspect-square md:w-1/3">
             <div className="h-full w-full">
               <Image src={"/images/shirts.jpg"} alt="Shirts image 1" fill />
             </div>
 
-            <div className="absolute bottom-0 right-0 w-1/3 bg-white p-4 pb-0 pr-0">
+            <div className="absolute bottom-0 right-0 w-1/3 bg-white p-4 pb-0 pr-0 md:w-2/3">
               <h2 className="text-3xl sm:text-5xl">Shirt 1</h2>
 
               <div className="mt-4 font-bold underline underline-offset-4 sm:text-2xl">
@@ -121,12 +121,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative aspect-[3/1] w-full flex-none">
+          <div className="relative aspect-[3/1] w-full flex-none md:w-1/3">
             <div className="h-full w-full">
               <Image src={"/images/shirts.jpg"} alt="Shirts image 2" fill />
             </div>
 
-            <div className="absolute bottom-0 left-0 w-1/3 bg-white p-4 pb-0 pl-0">
+            <div className="absolute bottom-0 left-0 w-1/3 bg-white p-4 pb-0 pl-0 md:left-auto md:right-0 md:w-2/3">
               <h2 className="text-3xl sm:text-5xl">Shirt 2</h2>
 
               <div className="mt-4 font-bold underline underline-offset-4 sm:text-2xl">
@@ -135,12 +135,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative aspect-[3/1] w-full flex-none">
+          <div className="relative aspect-[3/1] w-full flex-none md:w-1/3">
             <div className="h-full w-full">
               <Image src={"/images/shirts.jpg"} alt="Jeans image 1" fill />
             </div>
 
-            <div className="absolute bottom-0 right-0 w-1/3 bg-white p-4 pb-0 pr-0">
+            <div className="absolute bottom-0 right-0 w-1/3 bg-white p-4 pb-0 pr-0 md:w-2/3">
               <h2 className="text-3xl sm:text-5xl">Jeans 1</h2>
 
               <div className="mt-4 font-bold underline underline-offset-4 sm:text-2xl">
@@ -149,9 +149,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex w-full py-12">
+      <div className="flex w-full pb-12">
         <div className="flex w-full flex-col justify-center md:flex-row">
           <div className="flex flex-row items-center justify-center gap-1">
             <div>
